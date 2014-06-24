@@ -1,0 +1,106 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "author"}/
+    %title Apparta
+    %link{href: "css/bootstrap.min.css", rel: "stylesheet"}/
+    %link{href: "offcanvas.css", rel: "stylesheet"}/
+  %body
+    .navbar.navbar-fixed-top.navbar-inverse{role: "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "#"} Apparta
+        .collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{href: @home } Inicio
+    %br/
+    %br/
+    %br/       
+    %form{ :action => "", :method => "post"}
+      .col-xs-3
+        %label{:for => "nombre"} Nombre del apartamento:
+        %input{:type => "text", :name => "name", :class => "text"}
+      %br/
+      %br/
+      %br/
+      .col-xs-2
+        %label{:for => "direccion"} Dirección exacta:
+        %input{:type => "text", :name => "direccion", :class => "text"}
+      %br/
+      %br/
+      %br/
+      .col-xs-2
+        %label{for: "disabledTextInput"} Nombre de dueño:
+        %input{:type => "text", :name => "dueno", :class => "text"}
+      %br/
+      %br/
+      %br/
+      .col-xs-2
+        %label{for: "disabledTextInput"} Correo Electronico:
+        %input{:type => "email", :name => "correo", :class => "text"}
+      %br/
+      %br/
+      %br/
+      .radio
+        %input{:value => "Internet",:type => "checkbox", :name => "Internet"}/
+        Internet
+        %br/
+
+      .radio
+        %input{:value => "Alarma",:type => "checkbox", :name => "Alarma" }/
+        Alarma
+        %br/
+
+      .radio
+        %input{:value => "Parqueo",:type => "checkbox", :name => "Parqueo" }/
+        Parqueo
+        %br/
+
+      .radio
+        %input{:value => "Agua",:type => "checkbox", :name => "Agua" }/
+        Agua Caliente
+        %br/
+
+      .radio
+        %input{:value => "unDorm",:type => "checkbox", :name => "unDorm" }/
+        1 dormitorio
+        %br/
+
+      .radio
+        %input{:value => "dosDorm",:type => "checkbox", :name => "dosDorm" }/
+        2 dormitorio
+        %br/
+
+      .radio
+        %input{:value => "unBano",:type => "checkbox", :name => "unBano" }/
+        1 baño
+        %br/
+
+      .radio
+        %input{:value => "dosBano",:type => "checkbox", :name => "dosBano" }/
+        2 baño
+        %br/
+
+      .col-xs-3
+        %label{for: "disabledTextInput"} Precio:
+        %input.form-control{placeholder: "", :type => "text"}/
+      %br/
+      %br/
+      %br/
+      %br/
+      .col-xs-3
+        %input{:type => "submit", :value => "Publicar Apartamento»"}/ 
+
+
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    %script{src: "../../dist/js/bootstrap.min.js"}
