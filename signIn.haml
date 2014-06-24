@@ -1,0 +1,21 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "author"}/
+    %link{href: "../../assets/ico/favicon.ico", rel: "shortcut icon"}/
+    %title Iniciar Sesion
+    %link{href: "css/bootstrap.min.css", rel: "stylesheet"}/
+    %link{href: "signin.css", rel: "stylesheet"}/
+  %body
+    .container
+      %form.form-signin{role: "form"}
+        %h2.form-signin-heading Bienvenido!
+        %input.form-control{autofocus: "", placeholder: "Correo Electronico", required: "", type: "email"}/
+        %input.form-control{placeholder: "Contraseña", required: "", type: "password"}/
+        %br/
+        %button.btn.btn-lg.btn-primary.btn-block{type: "submit"} Iniciar Sesion
+        %a.btn.lg-btn.btn-success.btn-block{href: @home, role: "button"} Continuar anonimo»
