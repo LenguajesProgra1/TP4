@@ -1,0 +1,71 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "", name: "description"}/
+    %meta{content: "", name: "author"}/
+    %title Apparta
+    %link{href: "css/bootstrap.min.css", rel: "stylesheet"}/
+    %link{href: "offcanvas.css", rel: "stylesheet"}/
+  %body
+    .navbar.navbar-fixed-top.navbar-inverse{role: "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "#"} Apparta
+        .collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li.active
+              %a{href: @home } Inicio
+
+    .container
+      .row.row-offcanvas.row-offcanvas-right
+        .col-xs-12.col-sm-9
+          %p.pull-right.visible-xs
+
+          .jumbotron
+            %h1 Bienvenido!
+            %p Con esta aplicacion usted podra anunciar sus apartamentos para alquiler o bien ver las opciones de alquiler que hay.
+            %p
+              %a.btn.btn-default{href: @agregar , role: "button"} Publicar Apartamento»
+          .row
+            .col-6.col-sm-6.col-lg-4
+              %h2 Heading
+              %p 
+              %p
+                %a.btn.btn-default{href: "#" , role: "button"} Detalles»
+            .col-6.col-sm-6.col-lg-4
+              %h2 Heading
+              %p 
+              %p
+                %a.btn.btn-default{href: "#", role: "button"} Detalles»
+            .col-6.col-sm-6.col-lg-4
+              %h2 Heading
+              %p 
+              %p
+                %a.btn.btn-default{href: "#", role: "button"} Detalles»
+            .col-6.col-sm-6.col-lg-4
+              %h2 Heading
+              %p 
+              %p
+                %a.btn.btn-default{href: "#", role: "button"} Detalles»
+            .col-6.col-sm-6.col-lg-4
+              %h2 Heading
+              %p 
+              %p
+                %a.btn.btn-default{href: "#", role: "button"} Detalles»
+            .col-6.col-sm-6.col-lg-4
+              %h2 Heading
+              %p 
+              %p
+                %a.btn.btn-default{href: "#", role: "button"} Detalles»
+
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    %script{src: "js/bootstrap.min.js"}
+    %script{src: "offcanvas.js"}
